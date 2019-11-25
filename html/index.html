@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+	<div class= "background">
+		<div class ="nav">
+			<a class="a active" href="">Home</a>
+			<a class="b" href="#">Contact</a>
+			<a class="c" href="#">Gallery</a>
+			<a class="d" href="#">About Me</a>
+		</div >
+		<div class="content">
+			<div class="home">
+				<h1>Suman Shrestha</h1>
+				<h3>Beginner Developer</h3>
+			</div>
+			<div class="aboutus">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodobr	<br>
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit essebr	<br>
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non <br>
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a').click(function(){
+				//alert("i am click");
+				var selected = $(this);
+				$('a').removeClass('active');
+				$(selected).addClass('active');
+			});
+			var $a =$('.a'),
+			$b =$('.b'),
+			$c =$('.c'),
+			$d =$('.d'),
+			$home =$('.home'),
+			$aboutus =$('.aboutus');
+
+			$a.click(function(){
+				$home.fadeIn();
+				$aboutus.fadeOut();
+
+			});
+			$d.click(function(){
+				$aboutus.fadeIn();
+				$home.fadeOut();
+
+			});
+
+		});
+	</script>
+
+</body>
+</html>
