@@ -31,12 +31,50 @@
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><p>suman shrestha</p>
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="gallery">
+				<h1>My Gallery</h1>
+				
+				<div class="image">
+					<img src="images/alex.jpg">
+				</div><div class="image">
+					<img src="images/charlie.jpg">
+				</div><div class="image">
+					<img src="images/chelsea.jpg">
+				</div><div class="image">
+					<img src="images/daniel.jpg">
+				</div><div class="image">
+					<img src="images/hunter.jpg">
+				</div><div class="image">
+					<img src="images/kevin.jpg">
+				</div><div class="image">
+					<img src="images/marco.jpg">
+				</div><div class="image">
+					<img src="images/matt.jpg">
+				</div><div class="image">
+					<img src="images/ryan.jpg">
+				</div><div class="image">
+					<img src="images/viktor.jpg">
+				</div>
+				
+			</div>
+			<div class="contactus">
+				<div class="contactform">
+					<form action="index.html" method="post">
+						<input type="text" name="" class="inputtext" value="First Name">
+						<input type="text" name="" class="inputtext" value="Last Name">
+						<input type="text" name="" class="inputtext" value="Your Email">
+						<textarea cols="4" rows="6" class="message">Your Message</textarea>
+						<input type="button" name="" class="submitbutton" value="Submit">
+
+					</form>
+				</div>
 			</div>
 		</div>
 		
@@ -55,18 +93,39 @@
 			$c =$('.c'),
 			$d =$('.d'),
 			$home =$('.home'),
-			$aboutus =$('.aboutus');
+			$aboutus =$('.aboutus'),
+			$contactus = $('.contactus'),
+			$gallery =$('.gallery');
 
 			$a.click(function(){
 				$home.fadeIn();
 				$aboutus.fadeOut();
+				$gallery.fadeOut();
+				$contactus.fadeOut();
 
 			});
 			$d.click(function(){
 				$aboutus.fadeIn();
 				$home.fadeOut();
+				$gallery.fadeOut();
+				$contactus.fadeOut();
 
 			});
+			$b.click(function(){
+				$aboutus.fadeOut();
+				$home.fadeOut();
+				$gallery.fadeOut();
+				$contactus.fadeIn();
+
+			});
+			$c.click(function(){
+				$aboutus.fadeOut();
+				$home.fadeOut();
+				$gallery.fadeIn();
+				$contactus.fadeOut();
+
+			});
+
 
 		});
 	</script>

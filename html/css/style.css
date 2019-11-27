@@ -99,8 +99,8 @@ a.active, .nav a:hover{
 	position: absolute;
 	right: 0;
 	top: 10px;
-	color:white;
-	font-family: century gothic verdana;
+	color: white;
+	/*font-family: century;*/
 	padding: 0 60px;
 	display: none;
 }
@@ -108,5 +108,77 @@ a.active, .nav a:hover{
 	font-size: 18px;
 	line-height: 28px;
 	margin-bottom: 15px;
+
+}
+.gallery{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 6px;
+	display: none;
+
+}
+.gallery .image{
+	width: 25%;
+	margin: 1%;
+	float: left;
+	
+}
+.image img{
+	width: 100%;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	transform: scale(1);
+	-webkit-transform:scale(1);
+
+}
+.image img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+.contactus{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	color: white;
+	padding: 0 6px;
+	display: none;
+
+}
+.inputtext{ 
+	width: 55%;
+	height: 65px;
+	border: 3px solid black;
+	color: black;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+	margin-bottom: 15px;
+}
+.message{
+	width: 55%;
+	height: 135px;
+	border: 3px solid black;
+	color: black;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+}
+
+.submitbutton{
+	width: 160px;
+	height: 65px;
+	font-family: arial;
+	background-color: white;
+	color: black;
+	font-size: 28px;
+	border: none;
+	font-weight: bold;
+	float: left;
+	clear: both;
+	margin-top: 25px;
 
 }
